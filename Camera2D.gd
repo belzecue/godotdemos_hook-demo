@@ -1,3 +1,6 @@
+"""
+This script controls the dynamic camera.
+"""
 extends Camera2D
 
 # Radius of the zone in the middle of the screen where the cam doesn't move

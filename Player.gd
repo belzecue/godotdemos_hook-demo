@@ -13,6 +13,16 @@ const FRICTION_GROUND = 0.85	# The friction while on the ground
 var velocity = Vector2(0,0)		# The velocity of the player (kept over time)
 var can_jump = false			# Whether the player used their air-jump
 
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.pressed:
+			# We clicked the mouse -> shoot()
+			$Chain.shoot(event.position - get_viewport().size * 0.5)
+		else:
+			# We released the mouse -> release()
+			$Chain.release()
+
 # This function is called every physics frame
 func _physics_process(_delta: float) -> void:
 	# Walking
