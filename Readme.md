@@ -25,3 +25,8 @@ In short, here are the steps to follow:
 ## Credits
 
 For the chain physics I had to look up the original code [here](https://github.com/teeworlds/teeworlds/tree/cd96bda72a9228849ac14199e3daaff906341223/src/game/gamecore.cpp#L262).
+
+## License
+
+The code is [licensed](LICENSE) under [The Unlicense](https://unlicense.org/).
+Basically, you can do whatever you want with the code.
